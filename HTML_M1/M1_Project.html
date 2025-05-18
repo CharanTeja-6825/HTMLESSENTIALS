@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="desctiption" content="html basic project">
+    <meta name="keywords", content="html, css">
+    <meta name="author" content="Charan Teja R">
+    <title>HTML Basic</title>
+    <style>
+        input,select{
+            padding: 0.5rem;
+            border-radius: 0.3rem;
+            border: 2px solid black;
+        }
+        button{
+            padding: 1rem;
+            color: white;
+            background-color: rgba(0, 110, 255, 0.969);
+            border: none;
+            border-radius: 0.5rem;
+        }
+        a{
+            text-decoration: none;
+            border: 2px solid black;
+            padding: 1rem;
+            width: 100%;
+            text-align: center;
+            font-weight: 600;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: large;
+        }
+        .git{
+            background-color: black;
+            color: white;
+        }
+        .ldn{
+            background-color: rgb(0, 64, 255);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is my First Webpage</h1>
+    <div style="background-color: lightgray;border-radius: 0.5rem;padding: 10px;">
+        <h2>-->  About Me</h2>
+        <p>Myself Charan, I am a <span style="color: red; font-weight: 600;font-size: large;">tech enthusiast</span> who just loves tech more than anything and</p>
+        <h3>Get to know more about me : </h3>
+        <p>I love <span style="color: green; font-size: large;font-weight: 600;">innovation</span> in tech more than anything 
+        the thing is I need more content to fit in this paragraph but I do not know what to say so I introduced myself and yapped about myself
+        thank you for listening all this.</p>
+    </div>
+    <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+        <h3>Wanna meet me ?</h3>
+        <p>Fill up the below form to reach out to me !!</p>
+        <form style="display: flex;gap: 1rem; flex-direction: column;width: 50%;">
+            <input type="text" placeholder="Enter Name" required>
+            <input type="text" placeholder="your username in skool server" required>
+            <input type="text" placeholder="Enter email" required>
+            <select name="gender" required>
+                <option disabled selected>--select--</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="rather not say"></option>
+            </select>
+            <label>
+                <input type="radio" name="Level" value="level1">
+                Level 0
+            </label>
+            <label>
+                <input type="radio" name="Level" value="level1">
+                Level 1
+            </label>
+            <label>
+                <input type="radio" name="Level" value="level1">
+                Level 2
+            </label>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+    <h4>Review my works</h4>
+    <div style="display: flex;gap: 2rem;justify-content: center;">
+        <a class="ldn" href="https://www.linkedin.com/in/charan-teja-rathikindi">LinkedIn</a>
+        <a class="git" href="https://github.com/CharanTeja-6825">Github</a>
+    </div>
+</body>
+</html>

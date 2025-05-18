@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input,select{
+            padding: 0.5rem;
+            border-radius: 0.3rem;
+            border: 2px solid black;
+        }
+        button{
+            padding: 1rem;
+            color: white;
+            background-color: rgba(0, 110, 255, 0.969);
+            border: none;
+            border-radius: 0.5rem;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <div style="display: flex;justify-content: center;align-items: center;height: 100vh;flex-direction: column;">
+        <h1>Sign Up Form</h1>
+        <form style="display: flex;gap: 1rem; flex-direction: column;width: 50%;">
+            <input type="text" placeholder="Enter Name">
+            <input type="text" placeholder="Enter Age">
+            <input type="text" placeholder="Enter email">
+            <select name="gender">
+                <option disabled selected>--select--</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="rather not say"></option>
+            </select>
+            <label>
+                <input type="radio" name="Level" value="level1">
+                Level 0
+            </label>
+            <label>
+                <input type="radio" name="Level" value="level1">
+                Level 1
+            </label>
+            <label>
+                <input type="radio" name="Level" value="level1">
+                Level 2
+            </label>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>
