@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal CSS</title>
+    <style>
+        p{
+            color: green;
+            font-family: monospace;
+            font-size: 25px;
+        }
+        .class-selector{
+            color: red;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+        }
+        #id-selector{
+            color: gray;
+        }
+        .class-id-selector{
+            color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <p>Writing inline css requires a style tag inside the head section of the html page !</p>
+    <p class="class-selector">This is a style applied using the class selector..</p>
+    <p class="class-id-selector" id="id-selector">This is a style applied using the class selector and also id selector has more specificity than class selector</p>
+</body>
+</html>
