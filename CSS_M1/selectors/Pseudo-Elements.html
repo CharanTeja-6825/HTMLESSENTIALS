@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        a > button{
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-size: larger;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 600;
+            transition: all 0.15s ease-in-out;
+        }
+        a::before{
+            content: 'Do Not Click';
+            text-decoration: none;
+            color: black;
+        }
+        button::after{
+            content: ' Jai Balayya !!';
+        }
+    </style>
+</head>
+<body>
+    <a href="https://youtube.com"><button>Click here !</button></a>
+
+</body>
+</html>

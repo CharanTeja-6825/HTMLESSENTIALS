@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <style>
+        /* Normal Descendant selects every element in the parent */
+        .descendant p{
+            color: green;
+        }
+
+        /* Nested Descendants where we can select all or only direct Descendants */
+        .nested-descendant > p {
+            color: red;
+        }
+
+        /* plus combinator just applies the css to the element after the first one i.e h1 + p then to the 
+        first p after the h1 */
+        .combiplus h2 + p{
+            color: purple;
+        }
+
+        .combineall h2 ~ p{
+            color: orange;
+        }
+        .group > div{
+            background-color: lightgray;
+            margin: 1rem;
+            border-radius: 0.5rem;
+        }
+
+        .group > div > h2,p{
+            margin: 1rem;
+            padding: 1rem;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="group">
+        <div class="descendant">
+            <h2>Descendants</h2>
+            <p>This is selected as descandant</p>
+            <p>This is selected as descandant</p>
+            <p>This is selected as descandant</p>
+        </div>
+        <div class="nested-descendant">
+            <h2>Direct Descendant > </h2>
+            <p>This is direct descandant of div tag</p>
+            <section>
+                <p>Nested Desendant which is not selected</p>
+            </section>
+        </div>
+        <div class="combiplus">
+            <h2>Combinator +</h2>
+            <p>This is is selected</p>
+            <p>this is not selected</p>
+        </div>
+        <div class="combineall">
+            <h2>Combinator ~</h2>
+            <p>this is selected.</p>
+            <p>this is selected.</p>
+            <p>this is selected.</p>
+        </div>
+    </div>
+</body>
+</html>

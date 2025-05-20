@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo Classes</title>
+    <style>
+        a > button{
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-size: larger;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 600;
+            transition: all 0.15s ease-in-out;
+        }
+        a > button:hover{
+            padding: 3rem;
+            background-color: white;
+            color: black;
+            border: 3px solid black;
+            text-decoration: underline;
+        }
+        li:nth-child(even){
+            background-color: lightcoral;
+            width: 3rem;
+        }
+        table{
+            border-collapse: collapse;
+            width: 20%;
+            text-align: center;
+        }
+        tr:nth-child(odd){
+            background-color: lightgray;
+        }
+        input{
+            padding: 0.5rem;
+            border: 2px solid black;
+            border-radius: 0.5rem;
+            transition: all 0.2s ease-in-out;
+        }
+        input:focus{
+            padding:2rem;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://github.com"><button>Github</button></a>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 1</li>
+        <li>item 2</li>
+    </ul>
+    <table border="1">
+        <tr>
+            <th>Items</th>
+        </tr>
+        <tr>
+            <td>item</td>
+        </tr>
+        <tr>
+            <td>item</td>
+        </tr>
+        <tr>
+            <td>item</td>
+        </tr><tr>
+            <td>item</td>
+        </tr><tr>
+            <td>item</td>
+        </tr><tr>
+            <td>item</td>
+        </tr><tr>
+            <td>item</td>
+        </tr><tr>
+            <td>item</td>
+        </tr><tr>
+            <td>item</td>
+        </tr><tr>
+            <td>item</td>
+        </tr><tr>
+            <td>item</td>
+        </tr>
+    </table>
+    <br><br>
+    <input type="text" placeholder="Enter Name">
+</body>
+</html>

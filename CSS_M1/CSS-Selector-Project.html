@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selector Project</title>
+    <style>
+        .blog-page{
+            flex-direction: column;
+            font-family: 'Courier New', Courier, monospace;
+            border: 2px solid black;
+            box-sizing: border-box;
+            width: 60%;
+            margin: auto;
+            box-shadow: 2px 2px 10px rgba(165, 165, 165, 0.961);
+            border-radius: 0.5rem;
+        }
+        #blog-content{
+            width: 50%;
+            font-weight: 600;
+            font-size: large;
+        }
+        .blog-page p{
+            color: blue;
+        }
+        .blog-page p > span{
+            color: black;
+        }
+        p span::after{
+            content: '"';
+            color: gray;
+        }
+        p span::before{
+            content: '"';
+            color: gray;
+        }
+        #blog-content span+span{
+            transition: all 0.15s ease-in-out;
+        }
+
+        #blog-content span + span:hover{
+            font-size: x-large;
+            color: red;
+        }
+        h1 span{
+            background-color: yellow;
+        }
+        .quote{
+            transition: all 0.2s ease-in-out;
+        }
+        .quote:hover{
+            font-size: 2rem;
+        }
+        .blog-page > div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="blog-page">
+        <div>
+            <h1>This is <span>my blog Page</span></h1>
+            <img src="../HTML_M2/avatar_1740337948.png" alt="profile.png">
+            <p id="blog-content">Lorem ipsum, <span class="quote">dolor sit amet consectetur adipisicing elit.</span> Cupiditate minus necessitatibus eaque totam eveniet minima autem <span class=".hover-eff">recusandae</span>, nihil earum optio, non distinctio ullam laudantium! Saepe blanditiis maiores accusantium qui eligendi.</p>
+        </div>
+    </div>
+</body>
+</html>
