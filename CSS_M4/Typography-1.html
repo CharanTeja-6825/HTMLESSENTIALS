@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Family and Font Size</title>
+    <style>
+        /* 1em => parent element size */
+        /* 1rem => root element (html) size 1rem = 16px*/
+        /* vw, vh => fraction of viewport size i.e percentage of the view port size */
+        .serif-small{
+            font-family: 'Times New Roman',serif;
+            /* font-size: 12px; */
+            /* font-size: 0.8rem; */
+            font-family: 0.8em;
+        }
+        .sans-serif-med{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2rem;
+            /* font-size: 18px; */
+        }
+        .mono-large{
+            font-family: 'Courier New', Courier, monospace;
+            /* font-size: 24px; */
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <p class="serif-small">This is serif and small size</p>
+    <p class="sans-serif-med">This is sans-serif and medium size</p>
+    <p class="mono-large">This is monospace and large size</p>
+</body>
+</html>
