@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZIndex</title>
+    <style>
+        /* Z index maintains the z level of srceen axis level instead of x and y axes */
+        .b{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            
+        }
+        .b1{
+            position: absolute;
+            left: 40px;
+            top: 40px;
+            background-color: coral;
+            z-index: 1;
+        }
+        .b2{
+            position: absolute;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <div class="bb">
+        <div class="b b1">Box 1</div>
+        <div class="b b2">Box 2</div>
+    </div>
+</body>
+</html>

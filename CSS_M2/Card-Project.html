@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        section{
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 2px solid black;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease-in-out;
+            box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+        .html{
+            transition: all 0.15s ease-in-out;
+        }
+        .css{
+            transition: all 0.15s ease-in-out;
+        }
+        .js{
+            transition: all 0.15s ease-in-out;
+        }
+        .html:hover{
+            color: orange;
+            font-size: xx-large;
+        }
+        .css:hover{
+            color: rgb(77, 144, 232);
+            font-size: xx-large;
+        }
+        .js:hover{
+            color: gold;
+            font-size: xx-large;
+        }
+        #role{
+            font-size: x-large;
+            transition: all 0.15s ease-in-out;
+        }
+        #role:hover{
+            font-family: 'Courier New', Courier, monospace;
+            color: blue;
+            font-size: xx-large;
+            font-weight: 600;
+        }
+        section:hover{
+            transform: scale(1.1);
+            box-shadow: -10px 10px 20px rgba(117, 117, 117, 0.787);
+        }
+        img{
+            border-radius: 50%;
+        }
+        h2{
+            transition: all 0.15s ease-in-out;
+        }
+        h2:hover{
+            color: green;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2>Charan Teja Rathikindi</h2>
+        <img src="../HTML_M2/avatar_1740337948.png" alt="Profile">
+        <p id="role">Web Developer</p>
+        <p>Frame Works Used : 
+            <span class="html">HTML5</span>,
+            <span class="css">CSS3</span>,
+            <span class="js">JS(coming soon)</span>
+        </p>
+    </section>
+</body>
+</html>

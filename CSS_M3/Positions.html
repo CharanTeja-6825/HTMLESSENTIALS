@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        /* static is the default one */
+        body{
+            height: 400vh;
+        }
+        .static{
+            position:static;
+            background-color: lightcoral;
+            display: block;
+        }
+        /* Relative position tweaks its position from the original position */
+        .relative{
+            position: relative;
+            background-color: gold;
+            display: inline;
+            /* top: 20px; */
+            bottom: 10px;
+            left: 20px;
+        }
+        /* Absolute position tweaks the position based on the metrics of the parent element */
+        .parent{
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            background-color: lightgray;
+            
+        }
+        .child{
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            background-color: yellow;
+        }
+        /* fixed is fixed no matter what */
+        .fixed{
+            position: fixed;
+            left: 90%;
+            top: 90%;
+            background-color: lightcoral;
+            padding: 0.3rem;
+        }
+        /* sticky is almost same as fixed but moves until */
+        .sticky{
+            display: block;
+            position: sticky;
+            top: 20px;
+            left: 100px;
+            z-index: 2;
+            background-color: coral;
+            padding: 1rem;
+            
+        }
+    </style>
+</head>
+<body>
+     <div class="sticky">
+        this is sticky
+    </div>
+    <!-- this is static position which is default setting -->
+    <p class="static">Static Position which is default.</p>
+    <!-- relative postion can make modifications from its original position -->
+    <p class="relative">Relative position</p>
+    
+    <div class="parent">
+        <div class="child">
+            This is the child 
+        </div>
+    </div>
+
+    <div class="fixed">
+        Fixed content
+    </div>
+
+   
+</body>
+</html>

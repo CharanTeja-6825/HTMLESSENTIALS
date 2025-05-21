@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            height: 400vh;
+        }
+        header{
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: center;
+        }
+        a{
+            text-decoration: none;
+            color: gray;
+            transition: all 0.3s ease-in-out;
+        }
+        a:hover{
+            color: black;
+            transform: scale(1.2);
+            transform: translateY(-4px);
+        }
+        nav{
+            border-radius: 0.7rem;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+            padding: 1rem;
+            font-weight: 600;
+            display: flex;
+            font-size: large;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid black;
+            width: 30%;
+        }
+        span{
+            position: sticky;
+            top: 1rem;
+            font-weight: 600;
+            transition: all 0.15s ease-in-out;
+        }
+        span:hover{
+            color: yellowgreen;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="../CSS_M2/Card-Project.html">Profile</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        
+    </header>
+    <p style="display: inline;">This is a <span class="sticky">Sticky Navbar</span> scroll down and hover here</p>
+</body>
+</html>
