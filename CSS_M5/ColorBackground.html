@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Background</title>
+    <style>
+        .lineargrad{
+            background: linear-gradient(to right, coral, orange);
+            height: 50vh;
+            color: rgb(210, 66, 0);
+        }
+        .lineargrad1{
+            background: linear-gradient(to top, blue, purple);
+            height : 50vh;
+            color: white;
+        }
+        .radialgrad{
+            background: radial-gradient(circle, green, gold);
+            height: 50vh;
+        }
+        .color-group{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .color-group div{
+            border-radius: 0.5rem;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 600;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <div class="color-group">
+        <div class="lineargrad">
+        Background Text
+        </div>
+        <div class="radialgrad">
+            Background Text
+        </div>
+        <div class="lineargrad1">
+            Background Text
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Share+Tech&display=swap" rel="stylesheet">
+    <title>Hero Section</title>
+    <style>
+        body{
+            font-family: "Ancizar Sans";
+            display: flex;
+            justify-content: center;
+            align-items: center ;
+            height: 100vh;
+        }
+        .contact{
+            display: flex;
+            gap: 4rem;
+        }
+        main{
+            font-size: 2rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            border: none;
+            background-image: url('https://wallpapercave.com/wp/wp6374897.jpg');
+            font-family: 'Courier New', Courier, monospace;
+            padding: 6rem;
+            color: white;
+            background-position: center center;
+            background-size: cover;
+        }
+        button{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 600;
+            padding: 2rem;
+            font-size: x-large;
+            width: 15rem;
+            text-align: center;
+            border-radius: 0.5rem;
+            border: 2px solid white;
+            transition: all 0.15s ease-in-out;
+            cursor: pointer;
+        }
+        button:hover{
+            transform: scale(1.2);
+        }
+        .ldn{
+            background: linear-gradient(to bottom, blue, lightblue);
+            color: white;
+        }
+        .git{
+            background: linear-gradient(to right, black, gray);
+            color: white;
+        }
+        .ltc{
+            background: linear-gradient(to left, black, gold);
+            color: white;
+        }
+        h2{
+            color: black;
+        }
+        p a{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h2>Welcome to My website</h2>
+        <p style="text-align: center;">We are here to create <u><strong style="color: purple;"><em>stunning</em></strong></u> websites using amazing <span style="color: lightblue;font-weight: 800;">CSS3</span> styling..!</p>
+        <p>Contact me @ <a href="mailto:rcharanteja2006@gmail.com">rcharanteja2006@gmail.com</a></p>
+        <div class="contact">
+            <a href="https://www.linkedin.com/in/charan-teja-rathikindi"><button class="ldn">LinkedIn</button></a>
+            <a href="https://github.com/CharanTeja-6825"><button class="git">Github</button></a>
+            <a href="https://www.leetcode.com/u/klu_2300031964"><button class="ltc">Leetcode</button></a>
+        </div>
+    </main>
+</body>
+</html>
