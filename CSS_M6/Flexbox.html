@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .all{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .item-group-1{
+            display: flex;
+            background-color: lightgray;
+            padding: 1rem;
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+        }
+        .item-group-2{
+            display: flex;
+            background-color: lightgray;
+            padding: 1rem;
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            flex-direction: row-reverse;
+        }
+        .item-group-3{
+            display: flex;
+            background-color: lightgray;
+            padding: 1rem;
+            flex-direction: column;
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+        }
+        .item-group-4{
+            display: flex;
+            background-color: lightgray;
+            padding: 1rem;
+            /* flex-direction: column; */
+            flex-direction: column-reverse;
+            /* flex-direction: row-reverse; */
+        }
+        
+        .item{
+            background-color: yellow;
+            margin: 5px;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Flex Box</h2>
+    <div class="all">
+        <h2>Default Row</h2>
+        <div class="item-group-1">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </div>
+    <h3>Row-Reverse</h3>
+    <div class="item-group-2">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </div>
+    <h3>Column</h3>
+    <div class="item-group-3">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </div>
+    <h3>Column Reverse</h3>
+    <div class="item-group-4">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </div>
+    </div>
+</body>
+</html>

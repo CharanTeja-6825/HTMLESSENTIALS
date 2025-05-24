@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .item{
+            background-color: coral;
+            padding: 2rem;
+            border: 3px solid white;
+            margin: 5px;
+        }
+        .grid-container{
+            display: grid;
+            /* GRID Columns */
+            /* static arrangement */
+            grid-template-columns: 100px 100px 100px;
+            /* Dynamic arrangement */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* GRID Rows */
+            grid-template-rows: 1fr 1fr 1fr;
+
+            background-color: lightcoral;
+            padding: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+    </div>
+    
+</body>
+</html>
